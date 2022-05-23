@@ -44,7 +44,7 @@ Columns **EIN** and **NAME** are considered identification information.
 
 - Target Model Performance
 
-The goal was to meet or excede the 75% model accuracy, but this was not achieved obtaining numbers as close as 72% maximum.
+The goal was to meet or excede the 75% model accuracy, but this was not achieved obtaining numbers as close as 72%.
 
 - Steps taken to increase model performance
  1. Bucketing to the feature **ASK_AMT** and organizing the values by intervals.
@@ -52,4 +52,4 @@ The goal was to meet or excede the 75% model accuracy, but this was not achieved
  3. Trying the **tanh** activation function.
  
 ## Summary
-Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+It was not a satisfactory result taking into account that 75% is a standard to measure the accuracy of a model and it was not achieved by this example. In the future a Random Forest Classifier could be tested to try and achieve better results considering that it is a binary classification output.
