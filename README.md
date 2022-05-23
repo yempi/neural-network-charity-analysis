@@ -12,18 +12,17 @@ The process of completing this project is as follows:
 
 ## Results
 - Data Preprocessing
-  - Variables considered as targets
+  - Variables considered as targets:
 Column **IS_SUCCESSFUL** contains binary data pertaining whether or not the charity donation was used effectively.
-  
-  - Variables considered as features
+  - Variables considered as features:
 Columns **APPLICATION_TYPE**, **AFFILIATION**, **CLASSIFICATION**, **USE_CASE**, **ORGANIZATION**, **STATUS**, **INCOME_AMT**, **SPECIAL_CONSIDERATIONS**, **ASK_AMT**.
-  
-  - Variables that should be removed
+  - Variables that should be removed:
 Columns **EIN** and **NAME** are considered identification information.
   
   
   
 - Compiling, Training, and Evaluating the Model
+
   - Number of Neurons, Layers and Activation Functions selected for the model:
   
     Hidden Layers:
@@ -43,10 +42,11 @@ Columns **EIN** and **NAME** are considered identification information.
     - adam: optimizer for compilation.
     - binary_crossentropy: loss function for compilation.
 
-  - Target Model Performance
+- Target Model Performance
+
 The goal was to meet or excede the 75% model accuracy, but this was not achieved obtaining numbers as close as 72% maximum.
 
-  - Steps taken to increase model performance
+- Steps taken to increase model performance
  1. Bucketing to the feature **ASK_AMT** and organizing the values by intervals.
  2. Increasing the number of neurons in a single hidden layer, then using a model containing 3 hidden layers.
  3. Trying the **tanh** activation function.
